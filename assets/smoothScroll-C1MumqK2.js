@@ -1,0 +1,1 @@
+function d(r,o,a){let s=r.getBoundingClientRect().top,u=window.scrollY,m=s+a,i=null;function l(n){i===null&&(i=n);let t=n-i,e=c(t,u,m,o);window.scrollTo(0,e),t<o&&requestAnimationFrame(l)}function c(n,t,e,f){return n/=f/2,n<1?e/2*n*n+t:(n--,-e/2*(n*(n-2)-1)+t)}requestAnimationFrame(l)}export{d as S};
